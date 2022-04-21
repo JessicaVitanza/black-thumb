@@ -94,27 +94,43 @@ box-shadow: 12px 12px 25px #8ac353, -12px -12px 25px #ceff7d;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-               "imagine imagine"
-               "imagine1 text"
-               "text imagine2"
-               "imagine3 text"
-               "text imagine4";
+               "foto text"
+               "foto1 text1"
+               "text2 foto2"
+               "foto3 text3"
+               "text4 foto4";
     align-items: center;    
     justify-items: center;       
 }
 
-.black-thumb-testo {
-    font-size: 25px;
-    grid-area: imagine;
+.text-css {
+    font-size: 30px;
+    grid-area: foto;
+    width: 400px;
+    height: 300px;
     text-align: center;
-    background-color: aquamarine;
     padding: 30px 30px 30px 30px;
-    margin-top: 30px;
-    margin-right: 500px;
-    margin-bottom: 30px;
+    margin-left: 500px;
+    margin-top: -150px;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+line-height: 60px;
+letter-spacing: 3px;
+
 }
 
-
+.foto-css {
+background-image: url("./assets/sfondo-content.png");
+    grid-area: text;
+width: 1000px;
+height: 500px;
+margin-top: -693px;
+margin-left: -250px;
+}
 
 .footer {
     grid-area: footer;
