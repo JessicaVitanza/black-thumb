@@ -100,42 +100,37 @@ box-shadow: 12px 12px 25px #8ac353, -12px -12px 25px #ceff7d;
                "foto3 text3"
                "text4 foto4";
     align-items: center;    
-    justify-items: center;       
+    justify-items: center; 
+    margin-top: -760px;      
 }
 
 .text-css {
     font-size: 30px;
-    grid-area: foto;
+    grid-area: text;
     width: 400px;
-    height: 300px;
-    text-align: center;
-    padding: 30px 30px 30px 30px;
-    margin-left: 500px;
-    margin-top: -150px;
+    height: 200px;
+    text-align:center;
+    padding: 30px;
 background: rgba(255, 255, 255, 0.2);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
-line-height: 60px;
+line-height: 50px;
 letter-spacing: 3px;
-
 }
 
 .foto-css {
-background-image: url("./assets/sfondo-content.png");
-    grid-area: text;
+grid-area: foto;
 width: 1000px;
 height: 500px;
-margin-top: -693px;
-margin-left: -250px;
 }
 
 .footer {
     grid-area: footer;
     background-color: rgba(172, 244, 104, 0.255);
     width: 100%;
-    height: 120px;
+    height: 130px;
 }
 
