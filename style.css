@@ -134,3 +134,61 @@ height: 500px;
     height: 130px;
 }
 
+.foto1 {
+    grid-area: foto1;
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.text1 {
+    grid-area: text1;
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+}
+
+.foto2 {
+    grid-area: foto2;
+    width: 400px;
+    height: 200px;
+    background-color: rosybrown;
+}
+
+.text2 {
+    grid-area: text2;
+    width: 400px;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+
+.foto3 {
+    grid-area: foto3;
+    width: 400px;
+    height: 200px;
+    background-color: grey;
+}
+
+.text3 {
+    grid-area: text3;
+    width: 400px;
+    height: 200px;
+    background-color: black;
+}
+
+.foto4 {
+    grid-area: foto4;
+    width: 400px;
+    height: 200px;
+    background-color: violet;
+}
+
+.text4 {
+    grid-area: text4;
+    width: 400px;
+    height: 200px;
+    background-color: purple;
+}
+
+
+
