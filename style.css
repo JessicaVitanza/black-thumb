@@ -357,7 +357,7 @@ letter-spacing: 1px;
 
 /* Modalità mobile */
 
-@media screen (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     html, body {
         margin: 0px;
@@ -382,5 +382,94 @@ letter-spacing: 1px;
     "footer";
 }
 
+
+.header {
+    grid-area: header;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 3px;
+    background-color: #084d2d;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    }
+
+    .indoor {
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin-left: 10px;  
+        margin-bottom: 10px;
+        -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #084d2d;
+    -webkit-box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    }
+
+    .outdoor {
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+        margin-left: 20px;  
+        margin-bottom: 10px;
+        -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #084d2d;
+    -webkit-box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    }
+    
+    .orto {
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+        margin-left: 10px; 
+        margin-bottom: 10px; 
+        -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #084d2d;
+    -webkit-box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    }
+    
+    .altro {
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-left: 20px;  
+        margin-bottom: 10px;
+        -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #084d2d;
+    -webkit-box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    }
+
+    .search {
+        text-align: center;
+        letter-spacing: 1px;
+        color: #084d2d;
+        text-decoration: none;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin-right: 10px;   
+        padding-left: 20px;
+        padding-right: 20px;
+        -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background:#daddd9;
+    -webkit-box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
+    }
 
 }
