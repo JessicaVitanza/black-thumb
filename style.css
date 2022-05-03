@@ -13,7 +13,7 @@ html, body {
     grid-template-rows: 110px 400px 400px 400px 400px 400px 1fr;
     grid-template-areas: 
     "header header"
-    "text foto"
+    "foto foto"
     "foto text"
     "text foto"
     "foto text"
@@ -40,6 +40,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr;
 align-items: center;
 justify-items: center;
+z-index: 10;
 }
 
 .indoor {
@@ -120,18 +121,23 @@ box-shadow: 12px 12px 24px #074126, -12px -12px 24px #095934;
     grid-row-end: 3;
     background-image: url("./assets/sfondofoglie.png");
     background-size:contain ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text1 {
     color: whitesmoke;
-    grid-column-start: 2;
+    /* grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 3; */
     font-size: 25px;
     text-align:center;
-padding-top: 40px;
-padding-bottom: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 40px;
+padding-right: 40px;
 background: rgba(255, 255, 255, 0.2);
 border-radius: 15px 130px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -141,9 +147,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 line-height: 40px;
 letter-spacing: 3px;
 position: relative;
-top: 60px;
+/* top: 60px;
 right: 350px;
-height: 200px;
+height: 200px; */
+z-index: 0;
 }
 
 .foto2 {
