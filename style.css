@@ -403,6 +403,7 @@ letter-spacing: 1px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
+    background-color: #074126;
     }
 
     .indoor { display: none;}
