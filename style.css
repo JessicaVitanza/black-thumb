@@ -195,6 +195,10 @@ margin-left: 20px;
 letter-spacing: 1px;
 }
 
+.indoor-text-mobile{
+    visibility: none;
+}
+
 .foto3 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -306,6 +310,10 @@ margin-right: 30px;
 letter-spacing: 1px;
 }
 
+.altro-text-mobile{
+    visibility: none;
+}
+
 .fertilizzante-home {
     width: 350px;
     margin-left: 30px;
@@ -378,7 +386,7 @@ letter-spacing: 1px;
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 350px 350px 350px 350px 350px 70px;
+    grid-template-rows: 70px 350px 350px 350px 350px 350px 20px;
     grid-template-areas: 
     "header"
     "foto"
@@ -394,15 +402,8 @@ letter-spacing: 1px;
     grid-area: header;
     grid-row-start: 1;
     grid-row-end: 2;
-    font-family: 'Patua One', cursive;
-    letter-spacing: 3px;
     width: 100%;
     height: 60px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
     background-color: #074126;
     }
 
@@ -456,13 +457,21 @@ letter-spacing: 1px;
         grid-area: text;
         grid-row-start: 3;
         grid-row-end: 4;
+        margin: 10px;
+        margin-left: 20px;
+        border-radius: 90px;
     }
 
     .indoor-home{
         font-size: 20px;
+        margin-top: 30px;
     }
 
     .indoor-text-home{
+        display: none;
+
+    }
+    .indoor-text-mobile{
         color: #074126;
     text-align: center;
     font-size: 15px;
@@ -483,10 +492,17 @@ letter-spacing: 1px;
         grid-area: text;
         grid-row-start: 4;
         grid-row-end: 5;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 90px;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
     .outdoor-home{
         font-size: 20px;
+        margin-top: 30px;
     }
 
     .outdoor-text-home{
@@ -507,6 +523,8 @@ letter-spacing: 1px;
 
     .orto-home{
         font-size: 20px;
+        margin-top: 30px;
+        padding-left: 15px;
     }
 
 
@@ -514,6 +532,10 @@ letter-spacing: 1px;
         grid-area: text;
         grid-row-start: 5;
         grid-row-end: 6;
+        margin: 10px;
+        margin-left: 20px;
+        border-radius: 90px;
+        
     }
 
     .orto-text-home{
@@ -538,18 +560,27 @@ letter-spacing: 1px;
         grid-area: text;
         grid-row-start: 6;
         grid-row-end: 7;
+        margin: 10px;
+        margin-left: 20px;
+        border-radius: 90px;
+        
     }
 
     .altro-home{
         font-size: 20px;
+        margin-top: 30px;
     }
 
-    .altro-text-home{
+    .altro-text-mobile{
         color: #074126;
     text-align: center;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 1px;
+    }
+
+    .altro-text-home{
+        display: none;
     }
 
     .fertilizzante-home{
@@ -566,4 +597,11 @@ letter-spacing: 1px;
         grid-row-start: 7;
         grid-row-end: 8;
     }
+
+    .text-footer {
+    font-size: 15px;
+    color: #074126;
+    padding-bottom: 50px;
+    text-align: center;
+}
 }
