@@ -598,6 +598,7 @@ height: 200px; */
         font-size: 15px;
         line-height: 20px;
         letter-spacing: 1px;
+        display: block;
     }
 
     .altro-text-home {
