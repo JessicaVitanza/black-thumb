@@ -312,7 +312,7 @@ height: 200px; */
 }
 
 .altro-text-mobile {
-    visibility: none;
+    display: none;
 }
 
 .fertilizzante-home {
