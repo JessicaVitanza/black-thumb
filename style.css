@@ -8,6 +8,7 @@ body {
     font-family: 'Patua One', cursive;
 }
 
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,9 +47,8 @@ body {
 
 
 .indoor:hover{
-    background-color: #084d2d;
-    box-shadow: 0 4px #daddd9;
-    transform: translateY(6px);
+   transform: translateY(6px);
+    font-size: x-large;
 }
 
 .indoor:active{
@@ -70,9 +70,8 @@ body {
 
 
 .outdoor:hover{
-    background-color: #084d2d;
-    box-shadow: 0 4px #daddd9;
     transform: translateY(6px);
+    font-size: x-large;
 }
 .outdoor:active{
     background-color: #daddd9;
@@ -94,9 +93,8 @@ body {
 
 
 .orto:hover{
-    background-color: #084d2d;
-    box-shadow: 0 4px #daddd9;
     transform: translateY(6px);
+    font-size: large;
 }
 .orto:active{
     background-color: #daddd9;
@@ -116,9 +114,8 @@ body {
 }
 
 .altro:hover{
-    background-color: #084d2d;
-    box-shadow: 0 4px #daddd9;
     transform: translateY(6px);
+    font-size: x-large;
 }
 .altro:active{
     background-color:#daddd9;
@@ -154,20 +151,21 @@ body {
     color: whitesmoke;
     font-size: 25px;
     text-align: center;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 40px;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 15px 130px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: none;
     line-height: 40px;
     letter-spacing: 3px;
     position: relative;
     z-index: 0;
+    text-shadow: 2px 2px rgb(8, 8, 8); 
 }
 
 .foto2 {
@@ -195,13 +193,24 @@ body {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    -webkit-border-radius: 62px;
-    border-radius: 15px 120px;
-    background: #f5f8f4;
-    -webkit-box-shadow: 12px 12px 19px #daddd9, -12px -12px 19px #ffffff;
-    box-shadow: 12px 12px 19px #daddd9, -12px -12px 19px #ffffff;
     margin-top: 10px;
     margin-left: 20px;
+}
+
+
+.txt-link{
+    color: #074126;
+    text-decoration: none;
+    text-shadow: 3px 3px rgb(201, 206, 200);
+}
+
+.txt-link:hover{
+    background-color: #074126;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 56px;
+    text-shadow: none;
+    
 }
 
 .indoor-text-home {
@@ -241,13 +250,10 @@ body {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    -webkit-border-radius: 62px;
-    border-radius: 120px 15px;
-    background: #f5f8f4;
-    -webkit-box-shadow: 12px 12px 19px #daddd9, -12px -12px 19px #ffffff;
-    box-shadow: 12px 12px 19px #daddd9, -12px -12px 19px #ffffff;
     margin-right: 30px;
+    margin-top: 30px;
 }
+
 
 .outdoor-text-home {
     color: #074126;
@@ -263,13 +269,10 @@ body {
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
-    -webkit-border-radius: 62px;
-    border-radius: 15px 120px;
-    background: #f5f8f4;
-    -webkit-box-shadow: 12px 12px 19px #daddd9, -12px -12px 19px #ffffff;
-    box-shadow: 12px 12px 19px #daddd9, -12px -12px 19px #ffffff;
     margin-left: 30px;
+    margin-top: 50px;
 }
+
 
 .text4 {
     grid-column-start: 2;
@@ -304,13 +307,10 @@ body {
     grid-column-end: 3;
     grid-row-start: 6;
     grid-row-end: 7;
-    -webkit-border-radius: 62px;
-    border-radius: 120px 15px;
-    background: #f5f8f4;
-    -webkit-box-shadow: 12px 12px 19px #daddd9, -12px -12px 19px #ffffff;
-    box-shadow: 12px 12px 19px #daddd9, -12px -12px 19px #ffffff;
     margin-right: 30px;
+    margin-top: 30px;
 }
+
 
 .text5 {
     grid-column-start: 1;
@@ -374,7 +374,7 @@ body {
     grid-row-start: 7;
     grid-row-end: 8;
     height: 120px;
-    margin-bottom: 100px;
+    margin-top: 100px;
     background-image: url("./assets/prato.png");
     background-size: contain;
 }

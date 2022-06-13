@@ -1,11 +1,12 @@
 html,
-body {
+body{
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100%;
     background-color: rgb(239, 246, 240);
     font-family: 'Patua One', cursive;
+
 }
 
 .container {
@@ -36,15 +37,14 @@ body {
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
-    z-index: 10;
+    z-index: 12;
     justify-content: space-around;
 }
 
 
 .indoor:hover{
-    background-color: #084d2d;
-    box-shadow: 0 4px #daddd9;
     transform: translateY(6px);
+    font-size: x-large;
 }
 
 .indoor:active{
@@ -66,9 +66,8 @@ body {
 
 
 .outdoor:hover{
-    background-color: #084d2d;
-    box-shadow: 0 4px #daddd9;
     transform: translateY(6px);
+    font-size: x-large;
 }
 .outdoor:active{
     background-color: #daddd9;
@@ -90,9 +89,8 @@ body {
 
 
 .orto:hover{
-    background-color: #084d2d;
-    box-shadow: 0 4px #daddd9;
     transform: translateY(6px);
+    font-size: larger;
 }
 .orto:active{
     background-color: #daddd9;
@@ -112,9 +110,8 @@ body {
 }
 
 .altro:hover{
-    background-color: #084d2d;
-    box-shadow: 0 4px #daddd9;
     transform: translateY(6px);
+    font-size: x-large;
 }
 .altro:active{
     background-color:#daddd9;
@@ -134,18 +131,58 @@ body {
 }
 
 .title{
-    grid-area: title;
+    /* grid-area: title;
     grid-row-start: 2;
     grid-row-end: 3;
     margin-left: 50px;
     font-size: 50px;
     color: #084d2d;
     margin-top: 150px;
+    text-shadow: 3px 3px rgb(201, 206, 200); */
+    grid-area: title;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #074126;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+   height: 120px;
+   background: rgba(255, 255, 255, 0.2);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+    line-height: 40px;
+    letter-spacing: 3px;
+    color: whitesmoke;
+    margin-top: 160px;
+    text-align: left;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    font-size: 40px;
+    letter-spacing: 8px;
+    border: none;
+    text-shadow: 3px 3px rgb(8, 8, 8); 
+}
+
+.img-title{
+    grid-area: title;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("./assets/sfondofoglie.png");
+    grid-area: title;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    height: 200px;
+    z-index: 5;
+    margin-top: 119px;
 }
 
 
   .plants-container{
-    margin-top: -550px;
+    margin-top: -450px;
     margin-left: -30px;
     margin-right: 30px;
     margin-bottom: 100px;
@@ -155,10 +192,19 @@ body {
   }
 
   .img{
-      width: 200px;
+      max-height: 250px;
+      min-height: 250px;
       text-align: left;
       margin-bottom: 20px;
       margin-top: 20px;
+      border-radius: 16px;
+      margin-right: 10px;
+  }
+
+  img:active{
+    transform: scale(2);
+    margin-left: 150px;
+    margin-top: 100px;
   }
 
   .name{
@@ -169,12 +215,30 @@ body {
 
   .description{
       font-size: medium;
+      line-height: 30px;
+      color: #074126;
+  }
+
+  .description-succulent{
+    font-size: medium;
+    line-height: 30px;
+    color: #074126;
+    margin-left: 20px;
+    text-align: left;
   }
 
   .footer {
       grid-area: footer;
     height: 120px;
-    margin-top: 1500px;
+    margin-top: 4000px;
+    background-image: url("./assets/prato.png");
+    background-size: contain;
+}
+
+.footer-succulents{
+    grid-area: footer;
+    height: 120px;
+    margin-top: 750px;
     background-image: url("./assets/prato.png");
     background-size: contain;
 }
@@ -185,3 +249,23 @@ body {
     padding-bottom: 50px;
     text-align: center;
 }
+
+.top {
+    -webkit-tap-highlight-color: var(--color-transparent);
+    position: fixed;
+    background: #0741269b;
+    color: #ffff;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    padding: 2rem 1rem 1rem 2rem;
+    border-radius: 150px 0px 0px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: xx-large;
+  }
+
+  .top:hover{
+    background: hsla(0, 85%, 46%, 0.822);
+    color: #ffff;
+  }
