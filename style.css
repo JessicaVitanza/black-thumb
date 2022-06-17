@@ -48,7 +48,7 @@ body {
 
 .indoor:hover{
    transform: translateY(6px);
-    font-size: x-large;
+    font-size: larger;
 }
 
 .indoor:active{
@@ -71,7 +71,7 @@ body {
 
 .outdoor:hover{
     transform: translateY(6px);
-    font-size: x-large;
+    font-size: larger;
 }
 .outdoor:active{
     background-color: #daddd9;
@@ -94,7 +94,7 @@ body {
 
 .orto:hover{
     transform: translateY(6px);
-    font-size: large;
+    font-size: larger;
 }
 .orto:active{
     background-color: #daddd9;
@@ -115,7 +115,7 @@ body {
 
 .altro:hover{
     transform: translateY(6px);
-    font-size: x-large;
+    font-size: larger;
 }
 .altro:active{
     background-color:#daddd9;
